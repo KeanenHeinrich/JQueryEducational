@@ -1,0 +1,82 @@
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e9f4f5de;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fcb103;
+    height: 10%;
+    width: 100%;
+    z-index: 100;
+}
+
+h3{
+    color: #242322;
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+    left: 4.2%;
+    width: auto;
+    margin: 1.2%;
+}
+
+.nav{
+    right:9%;
+    top: 0%;
+    align-self: right;
+    position: fixed;
+    display:flex;
+    height:2.3%;
+}
+
+.pageLink{
+    color: #242322;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    padding-bottom: 28px;
+    padding-top: 22px;
+
+}
+
+.pageLink:hover{
+    color: #242322;
+    background-color: lightblue;
+    height: 100%;
+}
+
+#main{
+    background-color: #e9f4f5de;
+    position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 5%;
+    width: 85%;
+    min-height: 84.8%;
+    margin: auto;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-self: center;
+    text-align: center;
+    border-right: ridge;
+    border-left: ridge;
+    border-width: 3px;
+    border-color: #00000038;
+}
+
+h1{
+    position: relative;
+    margin: auto;
+    display: block;
+    color: black;
+}
+
+p{
+    color: #242322;
+}
