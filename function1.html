@@ -13,39 +13,43 @@
     <header>
         <H3>JQuery Educational</H3>
         <div class="nav">
-            <a class="pageLink" href="index.html">Home</a>
-            <a class="pageLink" href="about.html">About</a>
-            <a class="pageLink" href="function1.html">Function1</a>
-            <a class="pageLink" href="function2.html">Function2</a>
-            <a class="pageLink" href="function3.html">Function3</a>
-            <a class="pageLink" href="function4.html">Function4</a>
+            <a class="pageLink1" href="index.html">Home</a>
+            <a class="pageLink2" href="about.html">About</a>
+            <a class="pageLink3" href="function1.html">nextUntil()</a>
+            <a class="pageLink4" href="function2.html">has()</a>
+            <a class="pageLink5" href="function3.html">delay()</a>
+            <a class="pageLink6" href="function4.html">promise()</a>
         </div>
     </header>
 
     <div id="main">
 
-        <h1>Function1</h1>
+        <h1>nextUntil()</h1>
         
         <div id="wrapper">
         
             <div class="column-left">
-                <h2>Code</h2>    
+                <h2>Description</h2>    
             </div>
             <div class="column-middle">
-                <h2>Description</h2>
+                <h2>Code</h2>
             </div>
             <div class="column-right">
-                <h2>Show</h2>
+                <h2>Demonstration</h2>
             </div>
 
             <div class="row-left">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+                <p class="pTbl">The nextUntil() method gets all the following siblings of each element, up to but not including the element matched by the selector. This is useful for selecting a range of elements between two points.</p>    
             </div>
             <div class="row-middle">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="pTblCode">$("#square1").nextUntil("#square4") .css("background-color", "blue");</p>
             </div>
             <div class="row-right">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button id="squareButton">Change Colors</button>
+                <div class="square" id="square1"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square" id="square4"></div>
             </div>
         
         </div>

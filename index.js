@@ -1,14 +1,17 @@
 $(function(){
+
     $(".nav").animate({top: 0, transition: "1.2s"});
     $("h3").animate({top: 0, transition: "1.2s"});
     $("header").animate({top: 0, transition: "1.2s"});
     $("#hidden").hide(1450, function(){
+        $("header").css("transition", "0s");
         $("#main").fadeIn(800, function(){
             $(".row-left").slideDown(700);
             $(".row-right").slideDown(700);
             $(".row-middle").slideDown(700);
         });
     })
+
     $(".column-middle").mouseenter(function(){
         $(this).css("transform", "scale(1.2)").css("z-index", 10).animate({borderLeftWidth : "1px", borderRightWidth: "1px"});
         $(".row-middle").css("transition", "1s").css("z-index", 10).css("transform", "scale(1.2) translate(0, 10.5%)").animate({borderLeftWidth : "1px", borderRightWidth: "1px"});
@@ -35,4 +38,22 @@ $(function(){
         $(this).css("transform", "scale(1.0)").css("z-index", 0);
         $(".row-right").css("transition", "1s").css("z-index", 0).css("transform", "scale(1.0) translate(0, 0%)");
     });
+
+    $("#squareButton").click(function(){
+        $("#square1").nextUntil("#square4").css("background-color", "blue");
+    })
+
+    $("#borderButton").click(function(){
+        $(".borderDiv").has("#bordered").css("border", "2px solid red");
+    })
+
+    $("#queueButton").click(function(){
+        $("#animBox").delay(2000).fadeOut();
+    })
+
+    $("#promiseButton").click(function(){
+        $("#animBox").fadeOut(1000).fadeIn(1000).promise().done(function() {
+            $(this).css("background-color", "blue");
+        });
+    })
 });
